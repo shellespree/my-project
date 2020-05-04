@@ -1,4 +1,4 @@
-  @keyframes swing {
+@keyframes swing {
     0% {
       transform: rotate(0deg);
     }
@@ -477,4 +477,66 @@
   
   .chiller-theme .sidebar-footer>a:last-child {
       border-right: none;
-  }
+}
+
+.container {
+    width: 25rem;
+    height: 100%;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.searchbar {
+    font-size: 2.4rem;
+    width: 25rem;
+    height: 5rem;
+    border:none;
+    border-radius: 10rem;
+    padding: 2rem;
+    transition: all .1s;
+    transition-delay: .1s;
+}
+.searchbar:hover{
+    width: 27rem;
+    height: 6rem;
+}
+.button{
+    height: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right:1rem;
+    transition: all .1s;
+    transition-delay: .1s;
+}
+.button:hover {
+    cursor:pointer;
+}
+.searchbar::placeholder {
+    opacity: .3;
+}
+
+.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 58px 0;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    min-width: 160px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
