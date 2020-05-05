@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Service Manager page</title>
+<style>
+    body {
+        background-image: url(back.jpg);
+        background-size: cover;
+    }
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+    <img style="background: inherit;" src="images/logo.png" alt="">
+<div class="bs-example">
+    <ul class="nav nav-pills mb-5">
+        <li class="nav-item">
+            <a href="approver.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="active directory" class="nav-link">User Profile</a>
+        </li>
+        <li class="nav-item">
+            <a href="approver-stock.html" class="nav-link">Stock</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Approve Record</a>
+            <div class="dropdown-menu">
+                <a href="approver-card.html" class="dropdown-item">Card</a>
+                <a href="approver-token.html" class="dropdown-item">Token</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown ml-auto">
+            <a href="index.html" class="nav-link">Logout</a>
+        </li>
+    </ul>
+   </div>
+
+   <div style="margin-left: 285px;margin-top: 102px;margin-bottom: -24px;" class="container" action=action_page.php>
+    <input type="text" maxlength="20" placeholder="Username..." class="searchbar"><button type="submit">
+        <i class="fa fa-search"></i>search
+    </button>
+    </div>
+    
+    <!--Blue select-->
+    <select style="margin-left: 560px;" class="mdb-select md-form colorful-select dropdown-primary" searchable="Search here..">
+        <option value="1">Hard Token</option>
+    </select>
+      
+     
+      
+      <select class="mdb-select" searchable="Search here..">
+        <option value="1" disabled selected>Choose your option</option>
+        <option value="2" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle">
+          Approve</option>
+        <option value="3" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">
+          Decline</option>
+      </select>
+      <button style="background-color: #4CAF50;width: 70px;" type="submit">Enter</button>
+    
+</body>
+</html>   
