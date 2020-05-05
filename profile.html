@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADMIN PAGE</title>
+    <title>PROFILE USER PAGE</title>
+    <link rel="stylesheet" href="// Material Select
+    $('.mdb-select').materialSelect({
+    });">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/admin.css">
 </head>
@@ -183,31 +186,56 @@
         <main class="page-content">
           <img src="images/logo.png" alt="">
                     <hr>
-              <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
-                <div class="card rounded-0 p-0 shadow-sm">
-                  <img src="images/3.jpeg" class="card-img-top rounded-0" alt="Report Card">
-                  <div class="card-body text-center">
-                      <h6 class="card-title">Report Card</h6>
-                      <a href="#" target="_blank" class="btn btn-success btn-sm">Gains</a>
-                      <a href="#" target="_blank" class="btn btn-danger btn-sm">Losses</a>
-                  </div>
-                </div>          
-              </div>
-                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
-                <div class="card rounded-0 p-0 shadow-sm">
-                  <img src="images/4.jpeg" class="card-img-top rounded-0" alt="Admin Rights">
-                  <div class="card-body text-center">
-                      <h6 class="card-title">Admin Rights</h6>
-                      <a href="#" target="_blank" class="btn btn-success btn-sm">Create</a>
-                      <a href="#" target="_blank" class="btn btn-danger btn-sm">Delete</a>
-                  </div>
-                </div>          
-              </div>
-            </div>
+             </div>
           </div>
-      
         </main>
+
+
+<h2 style="margin-top: -500px;margin-left: 300px;"><img style="width: 1100px;height: 350px;" src="switch.GIF" alt="#"></h2>
+<div style="margin-left: 300px;margin-top: 100px;margin-bottom: -24px;" class="container" action=action_page.php>
+<input type="text" maxlength="20" placeholder="Full Name" class="searchbar"><button type="submit">
+    <i class="fa fa-search"></i>search
+</button>
+</div>
+
+<!--Blue select-->
+<select style="margin-left: 560px;" class="mdb-select md-form colorful-select dropdown-primary" searchable="Search here..">
+    <option value="1">CEMP</option>
+    <option value="2">Service Manager</option>
+    <option value="2">Admin</option>
+    
+  </select>
+  
+  <label class="mdb-main-label">Categories</label>
+  
+  <select class="mdb-select" searchable="Search here..">
+    <option value="1" disabled selected>Branch</option>
+    <option value="2" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle">
+      Abule Egba</option>
+    <option value="3" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">
+      Alaba</option>
+    <option value="4" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">
+      Asaba</option>
+      <option value="5" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">
+      Festac</option>
+       <option value="6" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">
+      Head Office</option>
+       <option value="7" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">
+      Ilupeju</option>
+       <option value="8" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">
+         Orile</option>
+  </select>
+  <button style="background-color: #4CAF50;width: 70px;" type="submit">Enter</button>
+
+
+
+
+
+
+
+
+
+
         <!-- page-content" -->
       </div>
       <!-- page-wrapper -->
